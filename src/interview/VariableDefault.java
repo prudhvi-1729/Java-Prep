@@ -1,6 +1,6 @@
 package interview;
 
-public class BooleanDefault {
+public class VariableDefault {
 
     public static boolean myBoolean;
     static int myInt;

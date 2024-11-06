@@ -36,8 +36,19 @@ public class HashSetCollection {
 
         //use obj.contains(key) to find in hashset
 
-        // compare two sets and retain elements that are the same in both
-        // h_set1.retainAll(h_set2);
+         //compare two sets and retain elements that are the same in both
+         HashSet<String> h_set1 = new HashSet<String>();
+         h_set1.add("Red");
+         h_set1.add("blue");
+         h_set1.add("Black");
+
+         HashSet<String> h_set2 = new HashSet<String>();
+         h_set2.add("Red");
+         h_set2.add("Green");
+         h_set2.add("blue");
+         h_set1.retainAll(h_set2);
+
+         System.out.println("Intersection of two sets: "+h_set1);
 
     }
 }

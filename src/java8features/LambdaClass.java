@@ -1,5 +1,7 @@
 package java8features;
 
+import java.util.random.RandomGenerator;
+
 public class LambdaClass {
     public static void main(String[] args){
         //with void return type
@@ -15,6 +17,10 @@ public class LambdaClass {
 
         MyInterInt area = (a,b)-> a*b;
         System.out.println("area of square "+area.eval(4,4));
+
+        RandomGenerator generator = RandomGenerator.of("L32X64MixRandom");
+        int randomInt = generator.nextInt(100);
+        System.out.println(randomInt);
 
     }
 }

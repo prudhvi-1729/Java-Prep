@@ -25,6 +25,11 @@ public class HashcodeEquals {
     }
 
     @Override
+    public String toString(){
+        return firstName+" "+lastName+" "+age;
+    }
+
+    @Override
     public int hashCode(){
         return Objects.hash(firstName,lastName,age);
     }

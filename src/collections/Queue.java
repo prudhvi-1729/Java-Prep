@@ -1,2 +1,9 @@
-package collections;public class Queue {
+package collections;
+
+public class Queue {
+
+    public static void main(String[] args) {
+
+    }
+
 }

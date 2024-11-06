@@ -2,14 +2,13 @@ package practice;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 
 public class HashSetPractice {
     public static void main(String[] args){
-        HashSet<String> hset = new HashSet<String >();
-        hset.add("1");
-        hset.add("prudhvi");
-        hset.add("laxmi");
-        hset.add("tanmai");
+        String[] arr = {"2","3","4","5","6","7","8","9","10"};
+        HashSet<String> hset = new HashSet<String >(List.of(arr));
+
 
         Iterator<String> itr = hset.iterator();
         while(itr.hasNext()){
